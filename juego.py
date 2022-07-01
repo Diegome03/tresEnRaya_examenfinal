@@ -49,6 +49,8 @@ class Juego:
 
                 if self.tablero.hayJugadaGanadora():
                     print(f"\n    Felicidades jugador [ {jugador} ]! Has ganado")
+                    if input("\n¿Quieres volver a jugar? [S/n]: \n").lower() == "s":
+                        self.reset()
                     break
 
             if not self.tablero.hayJugadaGanadora():
