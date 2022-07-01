@@ -48,7 +48,7 @@ class Juego:
                 self.turno += 1
 
                 if self.tablero.hayJugadaGanadora():
-                    print(f"\n    Felicidades jugador [ {jugador.token} ]! Has ganado")
+                    print(f"\n    Felicidades jugador [ {jugador} ]! Has ganado")
                     break
 
             if not self.tablero.hayJugadaGanadora():
