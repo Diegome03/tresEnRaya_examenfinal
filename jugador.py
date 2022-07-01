@@ -35,7 +35,7 @@ class Jugador:
 
             if not tablero.estaDisponibleLaCelda(celdaElegida):
                 print("    Esa casilla ya está ocupada")
-                return False
+                return True
 
             return True
 
